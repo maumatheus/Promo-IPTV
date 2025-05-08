@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMO IPTV - Sua Melhor Experiência em TV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111; /* Dark background */
+            color: #FFFFFF;
+        }
+        .bg-brand-orange {
+            background-color: #FF8C00; /* A vibrant orange */
+        }
+        .text-brand-orange {
+            color: #FF8C00;
+        }
+        .border-brand-orange {
+            border-color: #FF8C00;
+        }
+        .hover-bg-brand-orange-dark:hover {
+            background-color: #E07B00; /* Slightly darker orange for hover */
+        }
+        .section-title {
+            font-weight: 900; /* Extra bold for titles */
+            font-size: 2.5rem; /* Large title size */
+            text-align: center;
+            margin-bottom: 1.5rem; /* Space below title */
+            text-transform: uppercase;
+        }
+        .card {
+            background-color: #1F1F1F; /* Slightly lighter than main bg for cards */
+            border-radius: 0.75rem; /* Rounded corners for cards */
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex; /* Added for flex layout */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Push button to bottom */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 140, 0, 0.2); /* Orange glow on hover */
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            margin-top: auto; /* Pushes button to the bottom if card content is short */
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(17, 17, 17, 0.8); /* Semi-transparent dark bg */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+        }
+        /* Custom scrollbar for a more modern look (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1F1F1F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF8C00;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E07B00;
+        }
+        .economy-badge {
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            color: #10B981; /* Tailwind's green-500 for economy text */
+            margin-top: 0.25rem; /* mt-1 */
+            margin-bottom: 0.5rem; /* mb-2 */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar-sticky shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-black text-brand-orange">PROMO IPTV</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-300 hover:text-brand-orange transition duration-300">Início</a>
+                <a href="#planos" class="text-gray-300 hover:text-brand-orange transition duration-300">Planos</a>
+                <a href="#canais" class="text-gray-300 hover:text-brand-orange transition duration-300">Canais</a>
+                <a href="#como-funciona" class="text-gray-300 hover:text-brand-orange transition duration-300">Como Funciona</a>
+                <a href="#faq" class="text-gray-300 hover:text-brand-orange transition duration-300">FAQ</a>
+                <a href="#contato" class="bg-brand-orange text-black cta-button hover-bg-brand-orange-dark">Contato</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#home" class="block text-gray-300 hover:text-brand-orange transition duration-300 py-2">Início</a>
+            <a href="#planos" class="block text-gray-300 hover:text-brand-orange transition duration-300 py-2">Planos</a>
+            <a href="#canais" class="block text-gray-300 hover:text-brand-orange transition duration-300 py-2">Canais</a>
+            <a href="#como-funciona" class="block text-gray-300 hover:text-brand-orange transition duration-300 py-2">Como Funciona</a>
+            <a href="#faq" class="block text-gray-300 hover:text-brand-orange transition duration-300 py-2">FAQ</a>
+            <a href="#contato" class="block bg-brand-orange text-black cta-button hover-bg-brand-orange-dark mt-2 text-center">Contato</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/000000/FF8C00?text=IPTV+Streaming');">
+        <div class="bg-black bg-opacity-60 p-8 md:p-12 rounded-lg text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                A Revolução da TV Chegou: <span class="text-brand-orange">PROMO IPTV</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                Assista seus canais favoritos, filmes e séries onde e quando quiser. Qualidade imbatível e preço que cabe no seu bolso!
+            </p>
+            <a href="#planos" class="bg-brand-orange text-black cta-button text-lg hover-bg-brand-orange-dark px-8 py-4">
+                Conheça Nossos Planos
+            </a>
+        </div>
+    </section>
+
+    <section id="planos" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-brand-orange">Nossos Planos Exclusivos</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                Escolha o plano ideal para você e sua família. Todos com acesso a milhares de conteúdos e alta definição.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card text-center">
+                    <div> <h3 class="text-2xl font-bold mb-1 text-brand-orange">1 Mês</h3>
+                        <p class="text-4xl font-black mb-2">R$30<span class="text-xl font-normal">,00</span></p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>Acesso Completo</li>
+                            <li>Canais SD, HD, FHD</li>
+                            <li>Filmes e Séries</li>
+                            <li>1 Tela Simultânea</li>
+                            <li>Suporte Online</li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="bg-brand-orange text-black cta-button hover-bg-brand-orange-dark w-full">Assinar Agora</a>
+                </div>
+
+                <div class="card text-center">
+                    <div> <h3 class="text-2xl font-bold mb-1 text-brand-orange">3 Meses</h3>
+                        <p class="text-4xl font-black">R$75<span class="text-xl font-normal">,00</span></p>
+                        <p class="economy-badge">Economia de R$ 15,00</p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>Acesso Completo</li>
+                            <li>Canais SD, HD, FHD, 4K</li>
+                            <li>Filmes e Séries</li>
+                            <li>Até 2 Telas Simultâneas</li>
+                            <li>Suporte Prioritário</li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="bg-brand-orange text-black cta-button hover-bg-brand-orange-dark w-full">Assinar Agora</a>
+                </div>
+
+                <div class="card text-center">
+                     <div> <h3 class="text-2xl font-bold mb-1 text-brand-orange">6 Meses</h3>
+                        <p class="text-4xl font-black">R$130<span class="text-xl font-normal">,00</span></p>
+                        <p class="economy-badge">Economia de R$ 50,00</p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>Acesso Completo Premium</li>
+                            <li>Canais SD, HD, FHD, 4K</li>
+                            <li>Filmes e Séries Premium</li>
+                            <li>Até 3 Telas Simultâneas</li>
+                            <li>Suporte Dedicado</li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="bg-brand-orange text-black cta-button hover-bg-brand-orange-dark w-full">Assinar Agora</a>
+                </div>
+
+                <div class="card text-center border-2 border-brand-orange relative">
+                    <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-orange text-black px-3 py-1 text-sm font-semibold rounded-full">MAIS VANTAJOSO</span>
+                    <div class="mt-4"> <h3 class="text-2xl font-bold mb-1 text-brand-orange">12 Meses</h3>
+                        <p class="text-4xl font-black">R$220<span class="text-xl font-normal">,00</span></p>
+                        <p class="economy-badge">Economia de R$ 140,00</p>
+                        <ul class="text-gray-400 space-y-2 mb-6">
+                            <li>Acesso Total VIP</li>
+                            <li>Todos os Canais Liberados</li>
+                            <li>Filmes e Séries Exclusivos</li>
+                            <li>Até 4 Telas Simultâneas</li>
+                            <li>Suporte VIP 24/7</li>
+                        </ul>
+                    </div>
+                    <a href="#contato" class="bg-brand-orange text-black cta-button hover-bg-brand-orange-dark w-full">Assinar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="canais" class="py-16 md:py-24 bg-black"> <div class="container mx-auto px-6">
+            <h2 class="section-title text-brand-orange">Uma Infinidade de Conteúdo</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                De canais ao vivo a filmes e séries aclamados, temos tudo o que você ama em um só lugar.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Canal+1" alt="Canal 1" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Canal+1'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Canal+2" alt="Canal 2" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Canal+2'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Esportes" alt="Esportes" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Esportes'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Filmes" alt="Filmes" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Filmes'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Séries" alt="Séries" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Séries'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Infantil" alt="Infantil" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Infantil'; this.onerror=null;">
+                </div>
+                 <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Notícias" alt="Notícias" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Notícias'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Documentários" alt="Documentários" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Documentários'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Variedades" alt="Variedades" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Variedades'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Música" alt="Música" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Música'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Adulto" alt="Adulto" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Adulto'; this.onerror=null;">
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg flex items-center justify-center p-2">
+                    <img src="https://placehold.co/100x60/FF8C00/000000?text=Internacional" alt="Internacional" class="max-h-full max-w-full object-contain rounded" onerror="this.src='https://placehold.co/100x60/FF8C00/111111?text=Internacional'; this.onerror=null;">
+                </div>
+            </div>
+            <p class="text-center mt-10 text-gray-400">E muito mais! Explore nosso catálogo completo após assinar.</p>
+        </section>
+
+    <section id="como-funciona" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-brand-orange">Simples e Rápido de Usar</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="card">
+                    <div class="text-brand-orange mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1. Escolha seu Plano</h3>
+                    <p class="text-gray-400">Selecione o plano que melhor se adapta às suas necessidades e orçamento.</p>
+                </div>
+                <div class="card">
+                    <div class="text-brand-orange mb-4">
+                         <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">2. Receba seu Acesso</h3>
+                    <p class="text-gray-400">Após a confirmação, você receberá seus dados de acesso por e-mail ou WhatsApp.</p>
+                </div>
+                <div class="card">
+                    <div class="text-brand-orange mb-4">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3. Assista Onde Quiser</h3>
+                    <p class="text-gray-400">Use em sua Smart TV, TV Box, celular, tablet ou computador. A diversão não tem limites!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 md:py-24 bg-black">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="section-title text-brand-orange">Perguntas Frequentes (FAQ)</h2>
+            <div class="space-y-6">
+                <details class="card p-6 cursor-pointer group">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        O que é IPTV?
+                        <span class="text-brand-orange transform transition-transform duration-300 group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        IPTV (Internet Protocol Television) é uma tecnologia que permite a transmissão de sinais de televisão através da internet, em vez de antenas tradicionais, cabo ou satélite. Com PROMO IPTV, você tem acesso a uma vasta gama de canais e conteúdos on-demand.
+                    </p>
+                </details>
+                <details class="card p-6 cursor-pointer group">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Quais dispositivos são compatíveis?
+                        <span class="text-brand-orange transform transition-transform duration-300 group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Nosso serviço é compatível com a maioria dos dispositivos: Smart TVs (Samsung, LG, etc.), TV Box (Android Box, Apple TV), smartphones e tablets (Android e iOS), computadores (Windows, Mac, Linux) e mais. Você precisará de um aplicativo reprodutor de IPTV.
+                    </p>
+                </details>
+                <details class="card p-6 cursor-pointer group">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Qual a velocidade de internet recomendada?
+                        <span class="text-brand-orange transform transition-transform duration-300 group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Recomendamos uma conexão de internet estável de pelo menos 10 Mbps para canais SD, 20 Mbps para HD, 30 Mbps para FHD e 50 Mbps para conteúdo 4K. Quanto maior a velocidade, melhor a experiência.
+                    </p>
+                </details>
+                 <details class="card p-6 cursor-pointer group">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Posso testar o serviço antes de assinar?
+                        <span class="text-brand-orange transform transition-transform duration-300 group-open:rotate-45">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-400 mt-3">
+                        Sim! Oferecemos um teste gratuito de X horas (informar duração do teste) para você experimentar a qualidade do nosso serviço. Entre em contato para solicitar seu teste.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title text-brand-orange">Fale Conosco</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                Tem alguma dúvida ou quer assinar um plano? Entre em contato conosco! Estamos prontos para te atender.
+            </p>
+            <a href="https://wa.me/5513998072835" target="_blank" class="bg-green-500 text-white cta-button hover:bg-green-600 text-lg px-8 py-4 inline-flex items-center">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Chamar no WhatsApp
+            </a>
+            <p class="text-gray-500 mt-6">Ou envie um e-mail para: <a href="mailto:contato@promoiptv.com.br" class="text-brand-orange hover:underline">contato@promoiptv.com.br</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p class="text-2xl font-bold text-brand-orange mb-2">PROMO IPTV</p>
+            <p>&copy; <span id="currentYear"></span> www.promoiptv.com.br - Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Este site é um catálogo de serviços IPTV. Não hospedamos nenhum conteúdo.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-500 hover:text-brand-orange"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.35 4.49 17.25 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 19.89 5.65 20.5 8.01 20.5c7.25 0 11.22-6.03 11.22-11.22 0-.17-.01-.34-.02-.51.77-.56 1.44-1.26 1.97-2.03z"></path></svg></a>
+                <a href="#" class="text-gray-500 hover:text-brand-orange"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96s4.46 9.96 9.96 9.96c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04zm0 17.92c-4.41 0-7.96-3.55-7.96-7.96s3.55-7.96 7.96-7.96 7.96 3.55 7.96 7.96-3.55 7.96-7.96 7.96zm2.59-9.96l-4.13 2.38c-.3.17-.59.09-.59-.25V9.81c0-.34.29-.42.59-.25l4.13 2.38c.3.18.3.43 0 .61z"></path></svg></a>
+                <a href="#" class="text-gray-500 hover:text-brand-orange"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.33 0.01 7.05 0.07C5.77 0.13 4.96 0.33 4.23 0.62C3.5 0.91 2.89 1.31 2.27 1.93C1.66 2.54 1.26 3.15 0.97 3.88C0.68 4.61 0.48 5.42 0.42 6.7C0.36 7.98 0.35 8.39 0.35 11.65C0.35 14.91 0.36 15.32 0.42 16.6C0.48 17.88 0.68 18.69 0.97 19.42C1.26 20.15 1.66 20.76 2.27 21.38C2.89 21.99 3.5 22.39 4.23 22.68C4.96 22.97 5.77 23.17 7.05 23.23C8.33 23.29 8.74 23.3 12 23.3C15.26 23.3 15.67 23.29 16.95 23.23C18.23 23.17 19.04 22.97 19.77 22.68C20.5 22.39 21.11 21.99 21.73 21.38C22.34 20.76 22.74 20.15 23.03 19.42C23.32 18.69 23.52 17.88 23.58 16.6C23.64 15.32 23.65 14.91 23.65 11.65C23.65 8.39 23.64 7.98 23.58 6.7C23.52 5.42 23.32 4.61 23.03 3.88C22.74 3.15 22.34 2.54 21.73 1.93C21.11 1.31 20.5 0.91 19.77 0.62C19.04 0.33 18.23 0.13 16.95 0.07C15.67 0.01 15.26 0 12 0Zm0 2.16C15.22 2.16 15.6 2.17 16.83 2.23C17.96 2.28 18.61 2.47 19.08 2.65C19.62 2.85 20.01 3.09 20.42 3.5C20.83 3.91 21.07 4.3 21.27 4.84C21.45 5.31 21.64 5.96 21.69 7.09C21.75 8.31 21.76 8.7 21.76 11.65C21.76 14.6 21.75 14.99 21.69 16.21C21.64 17.34 21.45 17.99 21.27 18.46C21.07 19 20.83 19.39 20.42 19.8C20.01 20.21 19.62 20.45 19.08 20.65C18.61 20.83 17.96 21.02 16.83 21.07C15.6 21.13 15.22 21.14 12 21.14C8.78 21.14 8.4 21.13 7.17 21.07C6.04 21.02 5.39 20.83 4.92 20.65C4.38 20.45 3.99 20.21 3.58 19.8C3.17 19.39 2.93 19 2.73 18.46C2.55 17.99 2.36 17.34 2.31 16.21C2.25 14.99 2.24 14.6 2.24 11.65C2.24 8.7 2.25 8.31 2.31 7.09C2.36 5.96 2.55 5.31 2.73 4.84C2.93 4.3 3.17 3.91 3.58 3.5C3.99 3.09 4.38 2.85 4.92 2.65C5.39 2.47 6.04 2.28 7.17 2.23C8.4 2.17 8.78 2.16 12 2.16ZM12 5.83C8.6 5.83 5.83 8.6 5.83 12C5.83 15.4 8.6 18.17 12 18.17C15.4 18.17 18.17 15.4 18.17 12C18.17 8.6 15.4 5.83 12 5.83Zm0 10.17C9.82 16 8 14.18 8 12C8 9.82 9.82 8 12 8C14.18 8 16 9.82 16 12C16 14.18 14.18 16 12 16Zm6.19-10.9C17.61 5.1 17.13 5.1 16.76 5.1C16.39 5.1 16.22 5.26 16.22 5.63C16.22 6 16.39 6.17 16.76 6.17C17.13 6.17 17.61 6.17 17.61 5.63C17.61 5.26 17.61 5.1 18.19 5.1Z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Close mobile menu if open and an item is clicked
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // FAQ Accordion toggle icon
+        const detailsElements = document.querySelectorAll('details');
+        detailsElements.forEach(details => {
+            details.addEventListener('toggle', function() {
+                const icon = this.querySelector('summary span svg');
+                // CSS group-open handles the rotation of the plus icon.
+            });
+        });
+
+    </script>
+</body>
+</html>
